@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+      "strict": true,
+      "jsx": "react-jsx",
+      "jsxImportSource": "hono/jsx",
+      "target": "esnext", // Set the ECMAScript target version
+      "module": "esnext", // Enable ES module syntax
+      "moduleResolution": "node", // Use Node's module resolution strategy
+      "esModuleInterop": true, // Enable interop between CommonJS and ES modules
+      "skipLibCheck": true // Skip type checking of declaration files
+  }
+}
