@@ -1,12 +1,13 @@
 {
     "name": "bun-hono-d3",
     "scripts": {
-        "dev": "bun run --hot packages/app/main.ts"
+        "dev": "npx tailwindcss -i ./packages/app/view/styles/global.css -o ./packages/app/static/dist/global.css --watch & bun run --hot packages/app/main.ts"
     },
     "dependencies": {
         "@hono/swagger-ui": "^0.4.1",
         "drizzle-orm": "^0.34.0",
-        "hono": "^4.6.3"
+        "hono": "^4.6.3",
+        "tailwindcss": "^3.4.13"
     },
     "devDependencies": {
         "@types/bun": "latest",

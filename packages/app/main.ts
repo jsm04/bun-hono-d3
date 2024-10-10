@@ -7,7 +7,6 @@ function bootstrap() {
     const app = new Hono()
     app.use('/static/*', serveStatic({ root: ROOT_PATH }))
     app.use('/favicon.ico', serveStatic({ path: './favicon.ico' }))
-    // app.use('/site.webmanifest', serveStatic({ path: './site.webmanifest' }))
     init_routes(app)
     return app
 }
